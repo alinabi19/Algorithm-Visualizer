@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Times, serif;
+  background-color: #dddddd;
+}
+
+#header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-color: #33527a;
+  height: 60px;
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header span {
+  margin: auto 5px;
+  font-size: 1.7rem;
+}
+
+#header span a {
+  text-decoration: none;
+  color: #b9b2b2;
+}
+
+#header span a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+#sorting-panel {
+  width: 100%;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+/* .swaps{
+  align-content: left;
+  text-align: left;
+} */
+
+#sort-container {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 50px;
+}
+
+.bars {
+  flex: 1 0 auto;
+  margin-right: 1px;
+  background-color: #2d748a;
+}
+
+#label {
+  color: white;
+}
+
+#list {
+  height: 50px;
+}
+
+.buttons {
+  margin: 10px auto;
+  align-content: center;
+  text-align: center;
+}
+
+button {
+  border-radius: 7px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 5px 5px 5px rgb(190, 190, 190);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+  align-content: center;
+  margin: auto;
+  background-color: rgba(47, 146, 27, 0.904);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(21, 63, 13);
+  cursor: pointer;
+}
+
+.shuffle-button {
+  background-color: rgb(179, 65, 65);
+  color: white;
+}
+
+.shuffle-button:hover {
+  background-color: rgb(97, 35, 35);
+  cursor: pointer;
+}
+
+#control-section {
+  font-size: 1.5rem;
+  padding: 20px 90px 0 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#control-section section {
+  flex: 1 0 33.33%;
+}
+
+#control-section section {
+  flex: 1 0 33.33%;
+}
+
+#control-section #size {
+  text-align: center;
+}
+
+#control-section #speed {
+  text-align: right;
+}

@@ -1,0 +1,129 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #33527a;
+    height: 60px;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #header span {
+    margin: auto 5px;
+    font-size: 1.7rem;
+  }
+  
+  #header span a{
+    text-decoration: none;
+    color: #b9b2b2;
+  }
+  
+  #header span a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  #maze-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: auto;
+  }
+  
+  #path-display {
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .square {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(235, 235, 235);
+    border: 2px solid rgba(255, 255, 255, 0);
+  }
+  
+  .obstacle {
+    background-color: rgb(34, 34, 34);
+  }
+  
+  #buttons {
+    margin: 10px auto;
+    align-content: center;
+    /* margin: auto; */
+    text-align: center;
+  }
+  
+  button {
+    border-radius: 7px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    /* box-shadow: 5px 5px 5px rgb(190, 190, 190); */
+    /* background-color: rgb(40, 69, 78); */
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    align-content: center;
+    margin: auto;
+  }
+  .start-button {
+    background-color: rgba(47, 146, 27, 0.904);
+    color: white;
+  }
+  .start-button:hover {
+    background-color: rgb(21, 63, 13);
+    cursor: pointer;
+  }
+  .running-button:hover {
+    background-color: rgb(12, 32, 8);
+    cursor: not-allowed;
+  }
+  .stop-button {
+    background-color: rgb(179, 65, 65);
+    color: white;
+  }
+  .stop-button:hover {
+    background-color: rgb(97, 35, 35);
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .last-square {
+    background-color: rgba(129, 15, 15, 0.37);
+  }
+  
+  .visited-square {
+    background-color: rgb(63, 150, 177);
+  }
+  
+  .bfs-path-square {
+    background-color: rgb(131, 43, 54);
+  }
+  
+  .found-path {
+    background-color: rgb(129, 15, 15);
+  }
+  
+  #paths-list {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  #path-list ul {
+    list-style-type: none;
+  }
+  

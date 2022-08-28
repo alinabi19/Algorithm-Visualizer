@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Paths!</title>
+    <link rel="stylesheet" href="maze.css" />
+</head>
+
+<body>
+    <div id="header">
+        <span>Maze Paths!</span>
+        <span><a href="./index.html"> Sorting</a></span>
+    </div>
+
+    <div id="maze-body"></div>
+
+    <div id="buttons">
+        <button class="start-button" id="start-button" onclick="allPaths()">
+            All Paths
+        </button>
+        <button class="start-button" id="short-button" onclick="shortestPath()">
+            Shortest Path
+        </button>
+        <button class="stop-button" onClick="window.location.reload();">
+            Reset
+        </button>
+    </div>
+    <div id="path-display"></div>
+    <div id="paths-list">
+        <ul></ul>
+    </div>
+    <script src="maze.js" async defer></script>
+</body>
+
+</html>
